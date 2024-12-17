@@ -35,7 +35,7 @@ stages:
     - task: UsePythonVersion@0
       inputs:
         versionSpec: '$(pythonVersion)'
-        disableDownloadFromRegistry: true
+        githubToken: '$(github_token)'
         addToPath: true
         architecture: 'x64'
       displayName: 'Use Python $(pythonVersion)'
